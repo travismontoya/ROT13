@@ -9,7 +9,7 @@ alpha, cipher :: String
 alpha    = ['A'..'Z'] ++ ['a'..'z']
 cipher   = ['N'..'Z'] ++ ['A'..'M'] ++ 
            ['n'..'z'] ++ ['a'..'m']
-              
+             
 rot13 :: Char -> Char
 rot13 x  = case elemIndex x alpha of
                 Just n  -> cipher !! n
