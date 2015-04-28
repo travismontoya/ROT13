@@ -1,0 +1,12 @@
+name:           rot13
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         tmontoya
+
+executable rot13
+  hs-source-dirs:  src
+  main-is:         rot13.hs
+  build-depends:   base >= 4
+  ghc-options:     -Wall
+
