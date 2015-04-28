@@ -15,7 +15,7 @@ rot13 x  = case elemIndex x alpha of
                 Nothing -> x
 
 encipher :: String -> String
-encipher = fmap rot13
+encipher xs = fmap rot13 xs
 
 main :: IO()
 main     = do l <- getLine
