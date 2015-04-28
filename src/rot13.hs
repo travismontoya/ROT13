@@ -19,5 +19,5 @@ encipher :: String -> String
 encipher = fmap rot13
 
 main :: IO()
-main     = do l <- getLine
+main b    = do l <- getLine
               putStrLn $ encipher l
