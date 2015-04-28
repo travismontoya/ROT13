@@ -1,4 +1,7 @@
 module Main where
+-- ROT13.hs ROT13 substitution cipher
+-- Reference:
+-- http://en.wikipedia.org/wiki/ROT13
 
 import Data.List
 
