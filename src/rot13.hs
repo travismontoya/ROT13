@@ -20,5 +20,4 @@ encipher = fmap rot13
 
 main :: IO()
 main     = do l <- getLine
-              let e = encipher l
-              putStrLn e
+              putStrLn $ encipher l
