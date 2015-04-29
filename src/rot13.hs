@@ -14,9 +14,6 @@ rot13 x  = case elemIndex x alpha of
              Just n  -> cipher !! n
              Nothing -> x
 
-encipher :: String -> String
-encipher = fmap rot13
-
 main :: IO()
 main     = do l <- getLine
-              putStrLn $ encipher l
+              putStrLn $ fmap rot13 l
